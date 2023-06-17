@@ -88,7 +88,7 @@ The tools for transferring a single satoshi or a specific quantity of satoshis w
 | Function | Parameter | Description |
 |:--- | :---| :---|
 |transfer | address_to block_start block_end | Returns the ordinal numbers of all satoshis sent to address_to between block_start ( block number, optional ) and block block_end ( block number, optional ) |
-|transferFrom|address_from address_to address_to block_start block_end |Returns the ordinal numbers of all satoshis from address_from sent to address_to between block_start ( block number, optional ) and block block_end ( block number, optional ) |
+|transferFrom|address_from address_to block_start block_end |Returns the ordinal numbers of all satoshis from address_from sent to address_to between block_start ( block number, optional ) and block block_end ( block number, optional ) |
 |hodlOf|UTXO_output| Returns the ordinal numbers of all satoshis in the output of UXTO |
 |valueSupply| None | Returns the ordinal numbers of all valid satoshis for SAT-20 token, A loose analogy with UTXO model: "inputs" = "outputs", valueSupply() = "inputs" - others of "outputs".|
 |event|address_freeze| After the satoshi sent by address_freeze, return the ordinal number of all satoshi from the receiving address at that block height|
