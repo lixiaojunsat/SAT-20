@@ -89,7 +89,7 @@ The tools for transferring a single satoshi or a specific quantity of satoshis w
 |:--- | :---| :---|
 |transfer | address_to block_start block_end | Returns the ordinal numbers of all satoshis sent to address_to between block_start ( block number, optional ) and block block_end ( block number, optional ) |
 |transferFrom|address_from address_to block_start block_end |Returns the ordinal numbers of all satoshis from address_from sent to address_to between block_start ( block number, optional ) and block block_end ( block number, optional ) |
-|hodlOf|UTXO_output| Returns the ordinal numbers of all satoshis in the output of UXTO |
+|HODL|UTXO_output| Returns the ordinal numbers of all satoshis in the output of UXTO |
 |valueSupply| None | Returns the ordinal numbers of all valid satoshis for SAT-20 token, A loose analogy with UTXO model: "inputs" = "outputs", valueSupply() = "inputs" - others of "outputs".|
 |event|address_freeze| After the satoshi sent by address_freeze, return the ordinal number of all satoshi from the receiving address at that block height|
 
@@ -100,7 +100,7 @@ The tools for transferring a single satoshi or a specific quantity of satoshis w
  "name":"Bitcoin Pizza",
  "symbol":"PIZZA",
  "max":"1000000000000",  
- "range":{"inputs":["hodlOf(a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d:0)"],"outputs":["valueSupply()"] },
+ "range":{"inputs":["HODL(a1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d:0)"],"outputs":["valueSupply()"] },
  "description":"Sat from the 10000 Bitcoin used to purchase two Papa John's pizzas on May 22 2010" 
 }
 ```
